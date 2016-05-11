@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="13dp" >
+    <TextView
+        android:textSize="12dp"
+        android:text="2016年1月"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_chat_activity">
+        <ImageView
+            android:id="@+id/iv_send_avatar"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/tv_send_msg"
+            android:layout_toLeftOf="@+id/iv_send_avatar"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:autoLink="web"
+            android:background="@drawable/chatto_bg"
+            android:lineSpacingExtra="2dp"
+            android:maxWidth="225.0dip"
+            android:paddingLeft="8dip"
+            android:textSize="15sp"
+            android:text="你好"
+            android:gravity="left|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/msg_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_send_msg"
+            android:clickable="true"
+            android:background="@drawable/msg_state_fail_resend"
+            android:visibility="gone" />
+        <ProgressBar
+            android:id="@+id/pb_sending"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_send_msg"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

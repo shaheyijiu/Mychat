@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <view.MyGridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="2pt"
+        android:verticalSpacing="2pt"
+        android:scrollbars="none"
+        android:numColumns="7"
+        android:fadingEdge="none"
+        android:gravity="center" />
+
+</LinearLayout>

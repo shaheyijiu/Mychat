@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">微信</string>
+    <string name="more">更多</string>
+    <string name="back">返回</string>
+    <string name="network_anomalies">网络异常</string>
+    <string name="User_already_exists">用户已经存在</string>
+    <string name="registration_failed_without_permission">注册失败，无权限！</string>
+    <string name="Registration_failed">注册失败</string>
+    <string name="illegal_user_name">不合法用户</string>
+    <string name="Is_landing">正在登录</string>
+    <string name="Login_failed">登录失败</string>
+    <string name="head_image">头像</string>
+    <string name="personal_information">个人信息</string>
+    <string name="user_name">昵称</string>\
+    <string name="user_id">微信号</string>
+    <string name="two_dimension">二维码</string>
+    <string name="sex">性别</string>
+    <string name="region">地区</string>
+    <string name="signature">个性签名</string>
+    <string name="scan">扫一扫</string>
+    <string name="roll">摇一摇</string>
+    <string name="people_nearby">附近的人</string>
+    <string name="drift_bottle">漂流瓶</string>
+    <string name="purchase">购物</string>
+    <string name="game">游戏</string>
+    <string name="new_friend">新的朋友</string>
+    <string name="group_chat">群聊</string>
+    <string name="label">标签</string>
+    <string name="gongzhonghao">公众号</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="detail">详细资料</string>
+    <string name="default_name">北山</string>
+    <string name="location">地区</string>
+    <string name="default_location">湖北 武汉</string>
+    <string name="default_signature">这个人很懒</string>
+</resources>

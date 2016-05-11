@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/black" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/top_bar_back" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toRightOf="@+id/iv_back"
+                android:background="@drawable/edittext_login"
+                android:gravity="bottom"
+                android:textColor="#fff"
+                android:hint="微信号/QQ号/手机号"
+                android:paddingBottom="10dp"
+                android:paddingLeft="46dp"
+                android:singleLine="true"
+                android:textColorHint="#484c4c"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignBottom="@id/et_search"
+                android:layout_alignLeft="@id/et_search"
+                android:layout_margin="8dp"
+                android:src="@drawable/icon_search" />
+        </RelativeLayout>
+</LinearLayout>

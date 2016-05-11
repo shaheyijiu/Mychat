@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:background="#ebebeb"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" />
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:paddingLeft="46dp"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:singleLine="true"
+            android:text="微信号/QQ号/手机号"
+            android:textSize="14sp"
+            android:background="@drawable/layer_list"
+            android:textColor="#C5C5C5" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_search"
+            android:layout_width="21dp"
+            android:layout_height="22dp"
+            android:layout_alignLeft="@id/tv_search"
+            android:src="@drawable/a_b"
+            android:layout_margin="6dp" />
+
+    </RelativeLayout>
+</LinearLayout>

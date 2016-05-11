@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.chat" >
+
+    <!-- 环信开始 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 环信结束 -->
+
+    <!-- 百度地图 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 百度地图结束 -->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <use-permission android:name="android.permission.RESTART_PACKAGES"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:name="app.App"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"
+            android:label="登陆"/>
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".RegisterActivity"
+            android:label="注册"/>
+        <activity android:name="account.MyInformation"
+            android:label="@string/personal_information"/>
+        <activity android:name=".Setting"
+            android:label="设置"/>
+        <activity android:name=".AddFriends"/>
+        <activity android:name="account.UserInformation"/>
+        <activity android:name=".AddFriendsTwo"/>
+        <activity android:name=".AddFriendsThree"/>
+        <activity android:name=".NewFriendsActivity"/>
+        <activity android:name=".UpdateNickActivity"/>
+        <activity android:name=".ChatActivity"
+                  android:launchMode="singleTask"
+                  android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".BaiduMapActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AlbumActivity"/>
+        <activity
+            android:name=".MipcaActivityCapture"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="kdk#chat" />
+        <meta-data android:name="com.baidu.lbsapi.API_KEY"
+            android:value="wXdEAOcnuFYnyoRCTfebjr9b" />
+        <!-- 声明sdk所需的service SDK核心功能-->
+        <service android:name="com.easemob.chat.EMChatService" />
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+    </application>
+
+</manifest>

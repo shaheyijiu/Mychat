@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include  android:id="@+id/layout_bar" layout="@layout/title"
+        android:text="个人信息"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="20dip" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/head"
+                android:background="@drawable/tv_enable"
+                android:clickable="true">
+                <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:text="@string/head_image"
+                    android:background="@drawable/tv_enable"
+                   android:clickable="true"
+                   android:textColor="#000000"
+                   android:textSize="16sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true" />
+                <ImageView
+                    android:id="@+id/head_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/head"/>
+            </RelativeLayout>
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="45dp"
+                 android:background="@drawable/tv_enable"
+                 android:clickable="true"
+                android:id="@+id/rl_nick">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/user_name"
+                     android:layout_marginLeft="30dp"
+                     android:layout_centerVertical="true"
+                     android:textColor="#000000"
+                     android:textSize="16sp" />
+                 <TextView
+                     android:id="@+id/tv_nick"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="xxx"
+                     android:layout_alignParentRight="true"
+                     android:layout_centerVertical="true"
+                     android:textSize="16sp"
+                     android:paddingRight="20dp" />
+            </RelativeLayout>
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/tv_enable"
+                android:clickable="true"
+                android:id="@+id/rl_wxid">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_id"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textIsSelectable="false" />
+                <TextView
+                    android:id="@+id/wx_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp" />
+            </RelativeLayout>
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/tv_enable"
+                android:clickable="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/two_dimension"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/td_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp" />
+            </RelativeLayout>
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="20dip" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/tv_enable"
+                android:clickable="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sex"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+                <TextView
+                    android:id="@+id/user_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="男"
+                    android:textSize="16sp"
+                    android:paddingRight="20dp" />
+            </RelativeLayout>
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/tv_enable"
+                android:clickable="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/region"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/user_region"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp" />
+            </RelativeLayout>
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/tv_enable"
+                android:clickable="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signature"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/user_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="这个人很懒，什么都没留下"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

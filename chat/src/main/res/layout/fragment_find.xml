@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="朋友圈"
+            android:id="@+id/tv_friends"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="16dp"
+            android:textColor="#353535"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_find_friends"
+            android:gravity="center_vertical"
+            android:paddingRight="16dp"
+            android:background="@drawable/setting_item_selector" />
+
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="1.0dip" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/scan"
+            android:id="@+id/tv_scan"
+            android:textSize="16sp"
+            android:textColor="#353535"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawableLeft="@drawable/icon_find_saoyisao"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector" />
+
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/roll"
+            android:id="@+id/tv_roll"
+            android:textSize="16sp"
+            android:textColor="#353535"
+            android:paddingLeft="16sp"
+            android:paddingRight="16sp"
+            android:drawableLeft="@drawable/icon_find_yaoyiyao"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector" />
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="1.0dip" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/people_nearby"
+            android:id="@+id/tv_people_nearby"
+            android:layout_weight="0.05"
+            android:textSize="16sp"
+            android:textColor="#353535"
+            android:paddingLeft="16sp"
+            android:paddingRight="16sp"
+            android:drawableLeft="@drawable/icon_find_nearby"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector" />
+
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/drift_bottle"
+            android:id="@+id/tv_bottle"
+            android:layout_weight="0.06"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            android:textColor="#353535"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawableLeft="@drawable/icon_find_piaoliuping"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector" />
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="1.0dip" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/purchase"
+            android:id="@+id/tv_purchase"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="#353535"
+            android:paddingLeft="16sp"
+            android:paddingRight="16sp"
+            android:drawableLeft="@drawable/icon_find_gouwu"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector" />
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/game"
+            android:id="@+id/textView11"
+            android:textSize="16sp"
+            android:textColor="#353535"
+            android:paddingLeft="16sp"
+            android:paddingRight="16sp"
+            android:background="@drawable/setting_item_selector"
+            android:drawableLeft="@drawable/icon_find_youxi"
+            android:gravity="center_vertical" />
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

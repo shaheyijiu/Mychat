@@ -82,7 +82,7 @@
         android:layout_height="52dp"
         android:clickable="true"
         android:background="@drawable/btn_list_item_bg"
-        android:id="@+id/label">
+        android:id="@+id/rl_sign">
 
         <ImageView
             android:layout_width="36dp"
@@ -98,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/label"
+            android:text="@string/nfc_sign"
             android:id="@+id/textView7"
             android:layout_marginLeft="12dp"
             android:layout_toRightOf="@+id/imageView3"

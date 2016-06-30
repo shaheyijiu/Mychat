@@ -33,4 +33,5 @@
     <string name="location">地区</string>
     <string name="default_location">湖北 武汉</string>
     <string name="default_signature">这个人很懒</string>
+    <string name="nfc_sign">NFC签到</string>
 </resources>

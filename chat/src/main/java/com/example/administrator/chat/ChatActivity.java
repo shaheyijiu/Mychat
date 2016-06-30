@@ -13,6 +13,8 @@ import android.os.Message;
 import android.os.PowerManager;
 import android.provider.MediaStore;
 import android.support.v4.view.ViewPager;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -189,6 +191,29 @@ public class ChatActivity extends Activity implements View.OnClickListener{
         emotion_normal.setOnClickListener(this);
         emotion_checked.setOnClickListener(this);
         iv_detail.setOnClickListener(this);
+        et_msg.addTextChangedListener(new TextWatcher() {
+            private CharSequence temp;
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                    temp = s;
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (temp.length() > 0){
+                    bt_more.setVisibility(View.GONE);
+                    bt_send.setVisibility(View.VISIBLE);
+                } else {
+                    bt_more.setVisibility(View.VISIBLE);
+                    bt_send.setVisibility(View.GONE);
+                }
+            }
+        });
         ll_location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -258,11 +283,13 @@ public class ChatActivity extends Activity implements View.OnClickListener{
                 if (ll_more.isShown()){
                     ll_more.setVisibility(View.GONE);
                 }
-                bt_more.setVisibility(View.GONE);
-                bt_send.setVisibility(View.VISIBLE);
+                //bt_more.setVisibility(View.GONE);
+                //bt_send.setVisibility(View.VISIBLE);
                 break;
             case R.id.bt_send:
                 sendText();
+                bt_more.setVisibility(View.VISIBLE);
+                bt_send.setVisibility(View.GONE);
                 adapter.notifyDataSetChanged();
                 listView.setSelection(listView.getCount() - 1);
                 break;

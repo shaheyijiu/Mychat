@@ -50,14 +50,7 @@ public class Fragment_Friends extends Fragment {
 
         View headView = LayoutInflater.from(getContext()).inflate(R.layout.contact_list_header,null);
         listView.addHeaderView(headView, null, false);
-        RelativeLayout addFriends = (RelativeLayout)headView.findViewById(R.id.rl_new_friend);
-        addFriends.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), NewFriendsActivity.class);
-                startActivity(intent);
-            }
-        });
+        registerListener(headView);
 
         View footerView = LayoutInflater.from(getContext()).inflate(R.layout.contact_list_footer,null);
         listView.addFooterView(footerView);
@@ -87,6 +80,24 @@ public class Fragment_Friends extends Fragment {
         });
     }
 
+    private void registerListener(View headView){
+        RelativeLayout addFriends = (RelativeLayout)headView.findViewById(R.id.rl_new_friend);
+        RelativeLayout nfcSign = (RelativeLayout)headView.findViewById(R.id.rl_sign);
+
+        addFriends.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), NewFriendsActivity.class);
+                startActivity(intent);
+            }
+        });
+        nfcSign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
     public void setUser(ArrayList<User> list){
         for (int i = 0;i < list.size();i ++){
             User user = list.get(i);

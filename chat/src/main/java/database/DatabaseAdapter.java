@@ -175,6 +175,7 @@ public class DatabaseAdapter {
         String where="PHONENUMBER=?";
         int numberOFEntriesDeleted = db.delete(UserDao.TABLE_NAME, where, new String[]{numeber}) ;
     }
+
     public void  updateEntry(String number,String password,SQLiteDatabase db)
     {
         // Define the updated row content.

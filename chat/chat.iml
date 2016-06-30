@@ -91,9 +91,9 @@
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="pinyin4j-2.5.0" level="project" />
-    <orderEntry type="library" exported="" name="easemobchat_2.2.4" level="project" />
-    <orderEntry type="library" exported="" name="locSDK_3.3" level="project" />
     <orderEntry type="library" exported="" name="easemobchat_2.1.5" level="project" />
+    <orderEntry type="library" exported="" name="locSDK_3.3" level="project" />
+    <orderEntry type="library" exported="" name="easemobchat_2.2.4" level="project" />
     <orderEntry type="library" exported="" name="httpcore-4.2.4" level="project" />
     <orderEntry type="library" exported="" name="zxing" level="project" />
     <orderEntry type="library" exported="" name="baidumapapi_v3_2_0" level="project" />
